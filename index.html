@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Simple Shopping Cart</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,36 +19,70 @@
     <!-- title heading shopping cart  -->
     <div class = "container">
       <div class = "cart-heading">
-        <h1>My Shopping Cart</h1>
+        <h3>My Shopping Cart</h3>
       </div>
     </div>
     <!-- item column heading prdt name, unit price, qty order, subtotal price  -->
     <div class = "container">
-      <div class =  "cart-menu-page">
-
-        <div class = "cart-menu-header">
-          <div class ="cart-menu-header-item">Item</div>
-          <div class ="cart-menu-header-unitprice">Unit Price</div>
-          <div class ="cart-menu-header-Quantity">Quantity</div>
-          <div class ="cart-menu-header-subtotalprice">Sub-Total Price</div>
+      <div class = "cart-menu-page">
+        <div class = "cart-item" id = "item-header">
+          <div class ="cart-item-header-name">Item</div>
+          <div class ="cart-item-header-unitprice">Unit Price</div>
+          <div class ="cart-item-header-quantity">Quantity</div>
+          <div class ="cart-item-header-subtotalprice">Sub-Total Price</div>
+          <div class ="cart-item-header-action">Actions</div>
         </div>
 
-        <div class = "cart-menu-item">
-          <div class = "cart-menu-item-name">Apple</div>
-          <div class = "cart-menu-item-unitprice">$10</div>
-          <div class = "cart-menu-item-qty">10</div>
-          <div class = "cart-menu-item-subtotalprice">$100</div>
+        <div class = "cart-item" id = "item-details">
+          <div class = "cart-item-name">Apple</div>
+          <div class = "cart-item-unitprice">$ 2.00</div>
+          <div class = "cart-item-qtyinput"><input id="quantity" type="number" min="1" max="20" value="1"></div>
+          <div class = "cart-menu-item-subtotalprice">$ 10.00</div>
+          <div class ="cart-item-header-action"><button class="cart-item-action">Delete</button></div>
         </div>
 
+        <div class = "cart-item" id = "item-details">
+          <div class = "cart-item-name">Orange</div>
+          <div class = "cart-item-unitprice">$ 1.50</div>
+          <div class = "cart-item-qtyinput"><input id="quantity" type="number" min="1" max="20" value="1"></div>
+          <div class = "cart-menu-item-subtotalprice">$ 10.00</div>
+          <div class ="cart-item-header-action"><button class="cart-item-action">Delete</button></div>
+        </div>
+
+        <div class = "cart-item" id = "item-details">
+          <div class = "cart-item-name">Lemon</div>
+          <div class = "cart-item-unitprice">$ 3.00</div>
+          <div class = "cart-item-qtyinput"><input id="quantity" type="number" min="1" max="20" value="1"></div>
+          <div class = "cart-menu-item-subtotalprice">$ 10.00</div>
+          <div class ="cart-item-header-action"><button class="cart-item-action">Delete</button></div>
+        </div>
+
+        <div class = "cart-item" id = "item-details">
+          <div class = "cart-item-name">Grape</div>
+          <div class = "cart-item-unitprice">$ 2.25</div>
+          <div class = "cart-item-qtyinput"><input id="quantity" type="number" min="1" max="20" value="1"></div>
+          <div class = "cart-menu-item-subtotalprice">$ 10.00</div>
+          <div class ="cart-item-header-action"><button class="cart-item-action">Delete</button></div>
+        </div>
+
+        <div class = "cart-item" id = "addon">
+          <div class = "cart-item-name"><input class="new-item" type="text" placeholder="Name of Fruit"></div>
+          <div class = "cart-item-unitprice">$ <input class="new-item" type="number" min="1.00" max="10.00" value="0.00"></div>
+          <div class = "cart-item-qtyinput"><input class="new-item" type="number" min="1" max="20" value="1"></div>
+          <div class = "cart-menu-item-subtotalprice">$ 10.00</div>
+          <div class ="cart-item-header-action"><button class="cart-item-action">Add</button></div>
+        </div>
+
+        <div class = "cart-menu-footer">
+          <div class = "item-basket-total"></div>
+          <div class = "checkout">
+            <input class = "check" type = "submit" value = "Proceed to Checkout">
+          </div>
+
+        </div>
 
       </div>
     </div>
-
-    <!-- item row values -->
-
-    <!-- Add item row -->
-  </div>
-    <!-- summation of total cart value -->
 
 
 
