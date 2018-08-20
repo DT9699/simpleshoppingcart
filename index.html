@@ -38,7 +38,7 @@
           <div class = "cart-item-unitprice">$ 2.00</div>
           <div class = "cart-item-qtyinput"><input id="quantity" type="number" min="1" max="20" value="1"></div>
           <div class = "cart-menu-item-subtotalprice">$ 10.00</div>
-          <div class ="cart-item-header-action"><button class="cart-item-action">Delete</button></div>
+          <div class ="cart-item-action"><button class="cart-action-btn">Delete</button></div>
         </div>
 
         <div class = "cart-item" id = "item-details">
@@ -46,7 +46,7 @@
           <div class = "cart-item-unitprice">$ 1.50</div>
           <div class = "cart-item-qtyinput"><input id="quantity" type="number" min="1" max="20" value="1"></div>
           <div class = "cart-menu-item-subtotalprice">$ 10.00</div>
-          <div class ="cart-item-header-action"><button class="cart-item-action">Delete</button></div>
+          <div class ="cart-item-action"><button class="cart-action-btn">Delete</button></div>
         </div>
 
         <div class = "cart-item" id = "item-details">
@@ -54,7 +54,7 @@
           <div class = "cart-item-unitprice">$ 3.00</div>
           <div class = "cart-item-qtyinput"><input id="quantity" type="number" min="1" max="20" value="1"></div>
           <div class = "cart-menu-item-subtotalprice">$ 10.00</div>
-          <div class ="cart-item-header-action"><button class="cart-item-action">Delete</button></div>
+          <div class ="cart-item-action"><button class="cart-action-btn">Delete</button></div>
         </div>
 
         <div class = "cart-item" id = "item-details">
@@ -62,22 +62,23 @@
           <div class = "cart-item-unitprice">$ 2.25</div>
           <div class = "cart-item-qtyinput"><input id="quantity" type="number" min="1" max="20" value="1"></div>
           <div class = "cart-menu-item-subtotalprice">$ 10.00</div>
-          <div class ="cart-item-header-action"><button class="cart-item-action">Delete</button></div>
+          <div class ="cart-item-action"><button class="cart-action-btn">Delete</button></div>
         </div>
 
         <div class = "cart-item" id = "addon">
           <div class = "cart-item-name"><input class="new-item" type="text" placeholder="Name of Fruit"></div>
-          <div class = "cart-item-unitprice">$ <input class="new-item" type="number" min="1.00" max="10.00" value="0.00"></div>
+          <div class = "cart-item-unitprice">$ <input class="new-item" type="number" min="0.00" max="100.00" step="0.01" value="0.00"></div>
           <div class = "cart-item-qtyinput"><input class="new-item" type="number" min="1" max="20" value="1"></div>
           <div class = "cart-menu-item-subtotalprice">$ 10.00</div>
-          <div class ="cart-item-header-action"><button class="cart-item-action">Add</button></div>
+          <div class ="cart-item-action"><button class="cart-action-btn">Add</button></div>
         </div>
 
         <div class = "cart-menu-footer">
-          <div class = "item-basket-total"></div>
-          <div class = "checkout">
-            <input class = "check" type = "submit" value = "Proceed to Checkout">
-          </div>
+          <div class = "item-basket-total" id ="total-purchase-text">Total Purchase:</div>
+          <div class = "item-basket-total" id ="total-purchase-amt">$ 100.00</div>
+
+        </div>
+          <div class = "checkout"><button class="cart-item-action">Proceed to Checkout</button></div>
 
         </div>
 
