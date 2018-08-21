@@ -54,7 +54,6 @@
 }
 
 #quantity {
-  float: relative;
   position: center;
 
 
@@ -68,6 +67,11 @@
 .cart-item-action {
   width: 13%;
   text-align: center;
+}
+
+.cart-action-btn {
+  font-size: 1.3rem;
+  border-radius: 3px;
 }
 
 .cart-menu-footer {
@@ -95,7 +99,7 @@
 }
 
 .checkout {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: right;
   color: black;
 }
