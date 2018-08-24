@@ -53,23 +53,51 @@
   text-align: center;
 }
 
-#quantity {
+.item-qty {
   position: center;
 
 
 }
-.cart-menu-item-subtotalprice {
+.cart-item-subtotalprice {
   width: 11%;
   text-align: center;
   color: #ff5722;
 }
+
+.addon-item-name {
+  width: 46%;
+}
+.addon-item-unitprice {
+  width: 16%;
+  text-align: center;
+}
+.addon-item-qtyinput {
+  width: 16%;
+  text-align: center;
+}
+
+.new-item-qty {
+  position: center;
+
+}
+.addon-item-subtotalprice {
+  width: 11%;
+  text-align: center;
+  color: #ff5722;
+}
+
 
 .cart-item-action {
   width: 13%;
   text-align: center;
 }
 
-.cart-action-btn {
+.cart-del-btn {
+  font-size: 1.3rem;
+  border-radius: 3px;
+}
+
+.cart-add-btn {
   font-size: 1.3rem;
   border-radius: 3px;
 }
