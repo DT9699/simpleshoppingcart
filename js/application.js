@@ -15,8 +15,8 @@ $(document).ready(function() {
     }
   }
 
-  var totalpurchaseAmt = 0;
   var totalpurchase = function () {
+    var totalpurchaseAmt = 0;
     var subtotalpurchaseArr = $(".cart-item-subtotalprice")
     for (var j = 0; j < subtotalpurchaseArr.length; j++) {
       totalpurchaseAmt = totalpurchaseAmt + Number($(subtotalpurchaseArr[j]).text().replace(/\$/,""))
@@ -39,20 +39,18 @@ $(document).ready(function() {
     </div>');
   }
 
-  $(document).on("click", ".item-qty", function(){
+  $(document).on("click change keyup", ".item-qty", function(){
     subtotalpurchase();
+    totalpurchase();
   });
 
   $(document).on("click", ".cart-add-btn", function() {
     additem();
+
   })
 
   $(document).on("click", ".cart-del-btn", function() {
     $(this).parents('.cart-item').remove();
-    sum();
-  });
-
-  $(document).on("click", ".cart-checkout-btn", function(){
     totalpurchase();
   });
 
